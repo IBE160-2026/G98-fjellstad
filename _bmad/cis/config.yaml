@@ -7,7 +7,7 @@ visual_tools: intermediate
 
 # Core Configuration Values
 user_name: TGF
-project_name: SDAC-forecast
+project_name: "Power market insight platform"
 communication_language: English
 document_output_language: English
 output_folder: "{project-root}/.docs"

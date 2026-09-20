@@ -11,7 +11,7 @@
 # ─────────────────────────────────────────────────────────────────
 
 [core]
-project_name = "SDAC-forecast"
+project_name = "Power market insight platform"
 document_output_language = "English"
 output_folder = "{project-root}/.docs"
 

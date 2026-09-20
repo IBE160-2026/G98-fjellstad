@@ -4,7 +4,7 @@
 # Date: 2026-09-18T14:56:18.600Z
 
 user_name: TGF
-project_name: SDAC-forecast
+project_name: "Power market insight platform"
 communication_language: English
 document_output_language: English
 output_folder: "{project-root}/.docs"
