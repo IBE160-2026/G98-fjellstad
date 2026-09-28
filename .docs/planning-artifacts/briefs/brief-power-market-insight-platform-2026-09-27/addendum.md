@@ -2,7 +2,7 @@
 title: "Addendum: Power Market Insight Platform"
 status: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 
 # Addendum: Power Market Insight Platform
@@ -11,7 +11,7 @@ Supporting technical depth from the brief conversation and the user's source not
 
 ## Module 1 — Short-term SYS forecast: full methodology detail
 
-**Data sources:** historical aggregated bid curves from the Nord Pool API; most fundamentals data (to model change from reference state) from the Volue API; net export flow adjustments from an external vendor.
+**Data sources:** historical aggregated bid curves from the Nord Pool API; most fundamentals data (to model change from reference state) from the Volue API, including net export flow forecasts (Volue also forecasts cross-border flows); unavailability/revision (UMM) data primarily from the NUCS API (Nordic Unavailability Collection System).
 
 **Reference-state selection (open research question):** whether to use the most recent trading day's curve as the reference state, or something like the same day last week, is explicitly unresolved and needs experimentation/testing — this is the "which baseline lead time" question. Hour-in-day patterns are captured by matching the reference-state hour.
 
@@ -57,6 +57,8 @@ Explains SYS forward market price *change* across the full range of tradable con
 Nordic geographical map showing all transmission network elements and production assets. Availability shown as a timeline the user can travel/scrub along — useful for building intuition about likely grid bottlenecks, which matter for area-level Nordic pricing.
 
 An AI-powered assistant helps the user investigate questions related to grid bottlenecks and Flow-Based Market Coupling (FBMC).
+
+**Data sources:** unavailability data mainly from the NUCS API (Nordic Unavailability Collection System); flow-based (FB) data from the JAO API (Joint Allocation Office).
 
 **Explicitly beyond this project's scope, if the MVP succeeds:** analysis tools on historical shadow prices; tools to investigate the relationship between FB (flow-based) variables and fundamental variables (the user already has a fair amount of code for this from professional work); extending the AI assistant to reason over historical shadow-price observations, FB variables, and forward-looking grid availability information together.
 
